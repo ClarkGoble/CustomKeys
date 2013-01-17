@@ -1,38 +1,38 @@
 {
     // At command line: 
     //    defaults write -g NSRepeatCountBinding -string "^u"
-    
+
     // shortcut keys
     // ^ = ctrl
     // $ = shift
     // @ = cmd
     // ~ = opt
-    
+
     // Home to move to beginning of line ala Windows
     "\UF729"  = "moveToBeginningOfLine:";
     "$\UF729" = "moveToBeginningOfLineAndModifySelection:";
     "^\UF729"   = "moveToBeginningOfDocument:";
     "^$\UF729"  = "moveToBeginningOfDocumentAndModifySelection:";
-    
+
     // End to move to end of line ala Windows
     "\UF72B"  = "moveToEndOfLine:";
     "$\UF72B" = "moveToEndOfLineAndModifySelection:";
     "^\UF72B"   = "moveToEndOfDocument:";
     "^$\UF72B"  = "moveToEndOfDocumentAndModifySelection:";
-    
+
     // Page up/down
     "\UF72C"  = "pageUp:";
     "~\UF72C"   = "scrollPageUp:";
     "\UF72D"  = "pageDown:";
     "~\UF72D"   = "scrollPageDown:";
-    
-	"@\UF702" = "moveToBeginningOfLine:"; 
-	"@\UF703" = "moveToEndOfLine:"; 
-	"$@\UF702" = "moveToBeginningOfLineAndModifySelection:"; 
-	"$@\UF703" = "moveToEndOfLineAndModifySelection:";
-	
-	// uppercase word
-	"^U" = (uppercaseWord:, moveWordForward:, moveWordBackward:);
+
+    "@\UF702" = "moveToBeginningOfLine:"; 
+    "@\UF703" = "moveToEndOfLine:"; 
+    "$@\UF702" = "moveToBeginningOfLineAndModifySelection:"; 
+    "$@\UF703" = "moveToEndOfLineAndModifySelection:";
+
+    // uppercase word
+    "^U" = (uppercaseWord:, moveWordForward:, moveWordBackward:);
     // lowercase word
     "^~u" = (lowercaseWord:, moveWordForward:, moveWordBackward:);
     // titlecase word
